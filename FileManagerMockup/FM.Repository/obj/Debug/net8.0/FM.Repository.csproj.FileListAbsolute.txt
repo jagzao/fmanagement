@@ -1,0 +1,14 @@
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\bin\Debug\net8.0\appsettings.Development.json
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\bin\Debug\net8.0\appsettings.json
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\bin\Debug\net8.0\FM.Repository.deps.json
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\bin\Debug\net8.0\FM.Repository.dll
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\bin\Debug\net8.0\FM.Repository.pdb
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\obj\Debug\net8.0\FM.Repository.csproj.AssemblyReference.cache
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\obj\Debug\net8.0\FM.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\obj\Debug\net8.0\FM.Repository.AssemblyInfoInputs.cache
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\obj\Debug\net8.0\FM.Repository.AssemblyInfo.cs
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\obj\Debug\net8.0\FM.Repository.csproj.CoreCompileInputs.cache
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\obj\Debug\net8.0\FM.Repository.dll
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\obj\Debug\net8.0\refint\FM.Repository.dll
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\obj\Debug\net8.0\FM.Repository.pdb
+C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Repository\obj\Debug\net8.0\ref\FM.Repository.dll

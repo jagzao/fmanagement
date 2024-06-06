@@ -1,0 +1,206 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|c:\\jgzao\\projectest\\mockupx\\filemanagermockup\\filemanagermockup\\controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|solutionrelative:filemanagermockup\\controllers\\billcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|c:\\jgzao\\projectest\\mockupx\\filemanagermockup\\filemanagermockup\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|solutionrelative:filemanagermockup\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5037994F-EE53-40CA-8325-C8854B15C563}|FM.Core\\FM.Core.csproj|c:\\jgzao\\projectest\\mockupx\\filemanagermockup\\fm.core\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5037994F-EE53-40CA-8325-C8854B15C563}|FM.Core\\FM.Core.csproj|solutionrelative:fm.core\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|c:\\jgzao\\projectest\\mockupx\\filemanagermockup\\filemanagermockup\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|solutionrelative:filemanagermockup\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|c:\\jgzao\\projectest\\mockupx\\filemanagermockup\\fm.cqrs\\commands\\getallbillshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|solutionrelative:fm.cqrs\\commands\\getallbillshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|c:\\jgzao\\projectest\\mockupx\\filemanagermockup\\filemanagermockup\\middleware\\apikeymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|solutionrelative:filemanagermockup\\middleware\\apikeymiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A5F1BE73-7EA6-423B-8E9B-F857DDE4D276}|FM.Repository\\FM.Repository.csproj|c:\\jgzao\\projectest\\mockupx\\filemanagermockup\\fm.repository\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A5F1BE73-7EA6-423B-8E9B-F857DDE4D276}|FM.Repository\\FM.Repository.csproj|solutionrelative:fm.repository\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|c:\\jgzao\\projectest\\mockupx\\filemanagermockup\\filemanagermockup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|solutionrelative:filemanagermockup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|c:\\jgzao\\projectest\\mockupx\\filemanagermockup\\filemanagermockup\\middleware\\dummyauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|solutionrelative:filemanagermockup\\middleware\\dummyauthenticationhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|c:\\jgzao\\projectest\\mockupx\\filemanagermockup\\filemanagermockup\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|solutionrelative:filemanagermockup\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|c:\\jgzao\\projectest\\mockupx\\filemanagermockup\\fm.cqrs\\queries\\registerfileuploadhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|solutionrelative:fm.cqrs\\queries\\registerfileuploadhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 572,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserDto.cs",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Core\\Models\\UserDto.cs",
+              "RelativeDocumentMoniker": "FM.Core\\Models\\UserDto.cs",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Core\\Models\\UserDto.cs",
+              "RelativeToolTip": "FM.Core\\Models\\UserDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T03:54:38.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DummyAuthenticationHandler.cs",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Middleware\\DummyAuthenticationHandler.cs",
+              "RelativeDocumentMoniker": "FileManagerMockup\\Middleware\\DummyAuthenticationHandler.cs",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Middleware\\DummyAuthenticationHandler.cs",
+              "RelativeToolTip": "FileManagerMockup\\Middleware\\DummyAuthenticationHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T02:38:56.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\appsettings.json",
+              "RelativeDocumentMoniker": "FileManagerMockup\\appsettings.json",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\appsettings.json",
+              "RelativeToolTip": "FileManagerMockup\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-05T23:50:30.608Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetAllBillsHandler.cs",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Cqrs\\Commands\\GetAllBillsHandler.cs",
+              "RelativeDocumentMoniker": "FM.Cqrs\\Commands\\GetAllBillsHandler.cs",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Cqrs\\Commands\\GetAllBillsHandler.cs",
+              "RelativeToolTip": "FM.Cqrs\\Commands\\GetAllBillsHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T21:02:54.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApiKeyMiddleware.cs",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Middleware\\ApiKeyMiddleware.cs",
+              "RelativeDocumentMoniker": "FileManagerMockup\\Middleware\\ApiKeyMiddleware.cs",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Middleware\\ApiKeyMiddleware.cs",
+              "RelativeToolTip": "FileManagerMockup\\Middleware\\ApiKeyMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T19:04:49.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Repository\\appsettings.json",
+              "RelativeDocumentMoniker": "FM.Repository\\appsettings.json",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Repository\\appsettings.json",
+              "RelativeToolTip": "FM.Repository\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAADJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-05T18:14:28.23Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Program.cs",
+              "RelativeDocumentMoniker": "FileManagerMockup\\Program.cs",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Program.cs",
+              "RelativeToolTip": "FileManagerMockup\\Program.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAmwDYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T14:38:48.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "FileManagerMockup\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "FileManagerMockup\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T16:55:06.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BillController.cs",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Controllers\\BillController.cs",
+              "RelativeDocumentMoniker": "FileManagerMockup\\Controllers\\BillController.cs",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Controllers\\BillController.cs",
+              "RelativeToolTip": "FileManagerMockup\\Controllers\\BillController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T14:25:15.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterFileUploadHandler.cs",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Cqrs\\Queries\\RegisterFileUploadHandler.cs",
+              "RelativeDocumentMoniker": "FM.Cqrs\\Queries\\RegisterFileUploadHandler.cs",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Cqrs\\Queries\\RegisterFileUploadHandler.cs",
+              "RelativeToolTip": "FM.Cqrs\\Queries\\RegisterFileUploadHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T05:05:40.334Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FilesController.cs",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Controllers\\FilesController.cs",
+              "RelativeDocumentMoniker": "FileManagerMockup\\Controllers\\FilesController.cs",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\Controllers\\FilesController.cs",
+              "RelativeToolTip": "FileManagerMockup\\Controllers\\FilesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-05T02:51:38.656Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
