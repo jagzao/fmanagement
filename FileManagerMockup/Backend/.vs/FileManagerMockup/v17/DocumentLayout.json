@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|c:\\jgzao\\projectest\\fmanagement\\filemanagermockup\\backend\\filemanagermockup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|solutionrelative:filemanagermockup\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|c:\\jgzao\\projectest\\fmanagement\\filemanagermockup\\backend\\filemanagermockup\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|solutionrelative:filemanagermockup\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|solutionrelative:fm.cqrs\\commands\\files\\getallfileshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|c:\\jgzao\\projectest\\fmanagement\\filemanagermockup\\backend\\fm.cqrs\\commands\\files\\getfilebyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|solutionrelative:fm.cqrs\\commands\\files\\getfilebyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|c:\\jgzao\\projectest\\fmanagement\\filemanagermockup\\backend\\fm.cqrs\\commands\\files\\registerfileuploadhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|solutionrelative:fm.cqrs\\commands\\files\\registerfileuploadhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|c:\\jgzao\\projectest\\fmanagement\\filemanagermockup\\backend\\fm.cqrs\\commands\\files\\getfilebyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|solutionrelative:fm.cqrs\\commands\\files\\getfilebyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|c:\\jgzao\\projectest\\fmanagement\\filemanagermockup\\backend\\fm.cqrs\\commands\\files\\deletefilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,32 +34,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FileManagerMockup\\Program.cs",
-              "RelativeDocumentMoniker": "FileManagerMockup\\Program.cs",
-              "ToolTip": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FileManagerMockup\\Program.cs",
-              "RelativeToolTip": "FileManagerMockup\\Program.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T00:19:06.538Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "GetAllFilesHandler.cs",
               "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\GetAllFilesHandler.cs",
               "RelativeDocumentMoniker": "FM.Cqrs\\Commands\\Files\\GetAllFilesHandler.cs",
               "ToolTip": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\GetAllFilesHandler.cs",
               "RelativeToolTip": "FM.Cqrs\\Commands\\Files\\GetAllFilesHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAAFAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAIwCkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T00:09:25.47Z",
+              "WhenOpened": "2024-06-07T02:16:22.348Z",
               "EditorCaption": ""
             },
             {
@@ -81,7 +64,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "DeleteFileHandler.cs",
               "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\DeleteFileHandler.cs",
               "RelativeDocumentMoniker": "FM.Cqrs\\Commands\\Files\\DeleteFileHandler.cs",
@@ -94,7 +77,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "UpdateFileHandler.cs",
               "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\UpdateFileHandler.cs",
               "RelativeDocumentMoniker": "FM.Cqrs\\Commands\\Files\\UpdateFileHandler.cs",
@@ -107,26 +90,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "RegisterFileUploadHandler.cs",
               "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\RegisterFileUploadHandler.cs",
               "RelativeDocumentMoniker": "FM.Cqrs\\Commands\\Files\\RegisterFileUploadHandler.cs",
               "ToolTip": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\RegisterFileUploadHandler.cs",
               "RelativeToolTip": "FM.Cqrs\\Commands\\Files\\RegisterFileUploadHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA+AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T23:43:25.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FilesController.cs",
               "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FileManagerMockup\\Controllers\\FilesController.cs",
               "RelativeDocumentMoniker": "FileManagerMockup\\Controllers\\FilesController.cs",
               "ToolTip": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FileManagerMockup\\Controllers\\FilesController.cs",
               "RelativeToolTip": "FileManagerMockup\\Controllers\\FilesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA3AAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAIAwwDkAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-06T22:52:21.238Z",
               "EditorCaption": ""

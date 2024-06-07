@@ -1,4 +1,6 @@
-﻿using FM.Cqrs.Queries.Files;
+﻿using FM.Cqrs.Queries;
+using System.Text;
+using FM.Cqrs.Queries.Files;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -13,10 +15,12 @@ namespace FileManagerMockup.Controllers
     public class FilesController : ControllerBase
     {
         private readonly IMediator _mediator;
+        private readonly IWebHostEnvironment _env;
 
-        public FilesController(IMediator mediator)
+        public FilesController(IMediator mediator, IWebHostEnvironment env)
         {
             _mediator = mediator;
+            _env = env;
         }
 
         [HttpPost("upload-stream")]
@@ -39,8 +43,8 @@ namespace FileManagerMockup.Controllers
                 {
                     if (contentDisposition.IsFileDisposition())
                     {
-                        var fileName = Path.GetRandomFileName();
-                        var filePath = Path.Combine(Path.GetTempPath(), fileName);
+                        var fileName = contentDisposition.FileName.Value.Trim('"');
+                        var filePath = Path.Combine(_env.ContentRootPath, "Uploads", fileName);
 
                         using (var targetStream = System.IO.File.Create(filePath))
                         {
@@ -51,7 +55,7 @@ namespace FileManagerMockup.Controllers
                         {
                             FilePath = filePath,
                             FileSize = new FileInfo(filePath).Length,
-                            Name = contentDisposition.FileName.Value
+                            Name = fileName
                         };
 
                         var result = await _mediator.Send(command);

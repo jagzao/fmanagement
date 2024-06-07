@@ -7,7 +7,7 @@ namespace FM.Cqrs.Queries.Files
         public string FilePath { get; set; }
         public long FileSize { get; set; }
         public string Name { get; set; }
-        public string ParentId { get; set; }
+        public int ParentId { get; set; }
         public bool IsDirectory { get; set; }
     }
 }
