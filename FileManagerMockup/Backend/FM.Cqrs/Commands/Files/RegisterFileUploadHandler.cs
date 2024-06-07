@@ -7,12 +7,12 @@ using Npgsql;
 
 namespace FM.Cqrs.Commands.Files
 {
-    public class RegisterFileUploadHandler : IRequestHandler<RegisterFileUploadQuery, bool>
+    public class CreateFileHandler : IRequestHandler<RegisterFileUploadQuery, bool>
     {
-        private readonly ILogger<RegisterFileUploadHandler> _logger;
+        private readonly ILogger<CreateFileHandler> _logger;
         private readonly string _connectionString;
 
-        public RegisterFileUploadHandler(ILogger<RegisterFileUploadHandler> logger, IConfiguration configuration)
+        public CreateFileHandler(ILogger<CreateFileHandler> logger, IConfiguration configuration)
         {
             _logger = logger;
             _connectionString = configuration.GetConnectionString("DefaultConnection");

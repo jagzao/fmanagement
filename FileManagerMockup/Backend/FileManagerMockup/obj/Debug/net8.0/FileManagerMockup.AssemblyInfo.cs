@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FileManagerMockup")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+909f08d320eb5176f96780bc83ebd6f6966aeb99")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a28bdb1ce937bfa178b8be74b947f1af0fe3d096")]
 [assembly: System.Reflection.AssemblyProductAttribute("FileManagerMockup")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FileManagerMockup")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

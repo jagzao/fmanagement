@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Net.Http.Headers;
+using FM.Core.Models;
 
 namespace FileManagerMockup.Controllers
 {
@@ -24,8 +25,26 @@ namespace FileManagerMockup.Controllers
         }
 
         [HttpPost("upload-stream")]
-        public async Task<IActionResult> UploadStream()
+        public async Task<IActionResult> UploadStream([FromForm] FileDto fileDto)
         {
+            if (fileDto.IsDirectory)
+            {
+                var command = new RegisterFileUploadQuery
+                {
+                    FilePath = null,
+                    FileSize = 0,
+                    Name = fileDto.Name,
+                    ParentId = fileDto.ParentId,
+                    IsDirectory = true
+                };
+                var result = await _mediator.Send(command);
+                if (result)
+                {
+                    return Ok(result);
+                }
+                return StatusCode(500, "Error al registrar el directorio");
+            }
+
             if (!Request.HasFormContentType ||
                 !MediaTypeHeaderValue.TryParse(Request.ContentType, out var mediaTypeHeader) ||
                 string.IsNullOrEmpty(mediaTypeHeader.Boundary.Value))
@@ -36,6 +55,7 @@ namespace FileManagerMockup.Controllers
             var boundary = HeaderUtilities.RemoveQuotes(mediaTypeHeader.Boundary).Value;
             var reader = new MultipartReader(boundary, HttpContext.Request.Body);
 
+
             MultipartSection section;
             while ((section = await reader.ReadNextSectionAsync()) != null)
             {
@@ -45,6 +65,11 @@ namespace FileManagerMockup.Controllers
                     {
                         var fileName = contentDisposition.FileName.Value.Trim('"');
                         var filePath = Path.Combine(_env.ContentRootPath, "Uploads", fileName);
+                        var directoryPath = Path.GetDirectoryName(filePath);
+                        if(!Directory.Exists(directoryPath))
+                        {
+                            Directory.CreateDirectory(directoryPath);
+                        }
 
                         using (var targetStream = System.IO.File.Create(filePath))
                         {
