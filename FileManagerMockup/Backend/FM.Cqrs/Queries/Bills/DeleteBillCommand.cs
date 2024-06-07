@@ -5,6 +5,6 @@ namespace FM.Cqrs.Queries
 {
     public class DeleteBillCommand : IRequest<ResponseDto>
     {
-        public int BillId { get; set; }
+        public int Id { get; set; }
     }
 }

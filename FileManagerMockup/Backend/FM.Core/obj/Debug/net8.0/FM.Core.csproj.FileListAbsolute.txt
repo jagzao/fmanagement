@@ -9,3 +9,15 @@ C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Core\obj\Debug\net8.0\FM.Core.d
 C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Core\obj\Debug\net8.0\refint\FM.Core.dll
 C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Core\obj\Debug\net8.0\FM.Core.pdb
 C:\jgzao\ProjecTest\Mockupx\FileManagerMockup\FM.Core\obj\Debug\net8.0\ref\FM.Core.dll
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\bin\Debug\net8.0\FM.Core.deps.json
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\bin\Debug\net8.0\FM.Core.dll
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\bin\Debug\net8.0\FM.Core.pdb
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\obj\Debug\net8.0\FM.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\obj\Debug\net8.0\FM.Core.AssemblyInfoInputs.cache
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\obj\Debug\net8.0\FM.Core.AssemblyInfo.cs
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\obj\Debug\net8.0\FM.Core.csproj.CoreCompileInputs.cache
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\obj\Debug\net8.0\FM.Core.sourcelink.json
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\obj\Debug\net8.0\FM.Core.dll
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\obj\Debug\net8.0\refint\FM.Core.dll
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\obj\Debug\net8.0\FM.Core.pdb
+C:\jgzao\ProjecTest\Fmanagement\FileManagerMockup\Backend\FM.Core\obj\Debug\net8.0\ref\FM.Core.dll

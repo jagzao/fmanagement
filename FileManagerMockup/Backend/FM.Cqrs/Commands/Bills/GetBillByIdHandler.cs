@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Npgsql;
 
-namespace FM.Cqrs.Commands
+namespace FM.Cqrs.Commands.Bills
 {
     public class GetBillByIdHandler : IRequestHandler<GetBillByIdQuery, ResponseDto>
     {
@@ -27,26 +27,25 @@ namespace FM.Cqrs.Commands
                 using (var connection = new NpgsqlConnection(_connectionString))
                 {
                     var sql = "SELECT * FROM Bills WHERE Id = @BillId";
-                    var bill = await connection.QueryFirstOrDefaultAsync(sql, new { BillId = request.BillId });
+                    var bill = await connection.QueryFirstOrDefaultAsync(sql, new { request.BillId });
 
                     if (bill != null)
                     {
                         response.IsSuccess = true;
-                        response.Message = "Bill retrieved successfully.";
                         response.Data = bill;
                     }
                     else
                     {
                         response.IsSuccess = false;
-                        response.Message = "Bill not found.";
+                        response.Message = "Factura no encontrada.";
                     }
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error retrieving bill with ID {BillId}", request.BillId);
+                _logger.LogError(ex, "Error obteniendo factura {BillId}", request.BillId);
                 response.IsSuccess = false;
-                response.Message = "An error occurred while retrieving the bill.";
+                response.Message = "Error obteniendo factura.";
                 response.exception = ex;
             }
 

@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Npgsql;
 
-namespace FM.Cqrs.Commands
+namespace FM.Cqrs.Commands.Bills
 {
     public class GetAllBillsHandler : IRequestHandler<GetAllBillsQuery, ResponseDto>
     {
@@ -30,7 +30,6 @@ namespace FM.Cqrs.Commands
                     var bills = await connection.QueryAsync(sql);
 
                     response.IsSuccess = true;
-                    response.Message = "Bills retrieved successfully.";
                     response.Data = bills;
                 }
             }
@@ -38,7 +37,7 @@ namespace FM.Cqrs.Commands
             {
                 _logger.LogError(ex, "Error retrieving bills.");
                 response.IsSuccess = false;
-                response.Message = "An error occurred while retrieving the bills.";
+                response.Message = ex.ToString();
                 response.exception = ex;
             }
 

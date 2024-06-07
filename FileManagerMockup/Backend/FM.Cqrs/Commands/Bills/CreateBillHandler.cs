@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Npgsql;
 
-namespace FM.Cqrs.Commands
+namespace FM.Cqrs.Commands.Bills
 {
     public class CreateBillHandler : IRequestHandler<CreateBillCommand, ResponseDto>
     {
@@ -25,13 +25,13 @@ namespace FM.Cqrs.Commands
             {
                 using (var connection = new NpgsqlConnection(_connectionString))
                 {
-                    var sql = "INSERT INTO Bills (Name, Amount, PdfPath) VALUES (@Name, @Amount, @PdfPath)";
-                    var parameters = new { request.Name, request.Amount, request.PdfPath };
+                    var sql = "INSERT INTO Bills (Name, Company) VALUES (@Name, @Company)";
+                    var parameters = new { request.Name, request.Company };
 
                     await connection.ExecuteAsync(sql, parameters);
                 }
 
-                _logger.LogInformation("Bill created successfully for customer: {Name}", request.Name);
+                _logger.LogInformation("Factura creada para: {Name}", request.Name);
                 return new ResponseDto
                 {
                     IsSuccess = true
@@ -39,7 +39,7 @@ namespace FM.Cqrs.Commands
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error creating bill for customer: {Name}", request.Name);
+                _logger.LogError(ex, "Error creando factura para: {Name}", request.Name);
                 return new ResponseDto
                 {
                     IsSuccess = false,

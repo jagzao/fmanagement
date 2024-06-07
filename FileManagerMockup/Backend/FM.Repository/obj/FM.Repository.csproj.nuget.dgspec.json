@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Repository\\FM.Repository.csproj": {}
+    "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Repository\\FM.Repository.csproj": {}
   },
   "projects": {
-    "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Repository\\FM.Repository.csproj": {
+    "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Repository\\FM.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Repository\\FM.Repository.csproj",
+        "projectUniqueName": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Repository\\FM.Repository.csproj",
         "projectName": "FM.Repository",
-        "projectPath": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Repository\\FM.Repository.csproj",
+        "projectPath": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Repository\\FM.Repository.csproj",
         "packagesPath": "C:\\Users\\onlj\\.nuget\\packages\\",
-        "outputPath": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Repository\\obj\\",
+        "outputPath": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

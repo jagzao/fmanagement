@@ -7,14 +7,15 @@ CREATE TABLE Users (
 CREATE TABLE Bills (
     Id SERIAL PRIMARY KEY,
     Name VARCHAR(100) NOT NULL,
-    PdfPath VARCHAR(255) NOT NULL
+    Company VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE Files (
-    Id VARCHAR(50) PRIMARY KEY,
-    ParentId VARCHAR(50),
-    Name VARCHAR(100) NOT NULL,
-    IsDirectory BOOLEAN NOT NULL,
-    FOREIGN KEY (ParentId) REFERENCES Files(Id)
+    Id SERIAL PRIMARY KEY,
+    FilePath TEXT,
+    FileSize BIGINT,
+    Name TEXT,
+    ParentId TEXT,
+    IsDirectory BOOLEAN
 );
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mPZEGVYzbFpWLGJpoQ6LGNt2mJKSupS+lxBKn4Nfe142lUmL2j8e3c7eFxZgn0icojsXCJ6hV01TDbbF8WDY1g==",
+  "dgSpecHash": "xG9jgD8UoCfgBDpoCO91pjMIqVTLUOC662t7QwqiFzRJhi3AL8Vc1RewvGpPXGO/geyB2l7w/ySS+5rTARfQSA==",
   "success": true,
-  "projectFilePath": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Entity\\FM.Entity.csproj",
+  "projectFilePath": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Entity\\FM.Entity.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

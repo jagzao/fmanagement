@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "46Qdpf8qinPCGWK634JeOSFxOnx9vThPE8bIHOwSSB/ZBOiwtL6R1Nq0ffBQlZlwn+qRqkOS/PyEO2b1h6lQUQ==",
+  "dgSpecHash": "ITgK+RFmFQMkp+Jjz4znuE+n9CrWkes5trkazk5culL8vTkl3zRYVRxdMn7B1NeH46wZZG0GSb9751eMn9P54Q==",
   "success": true,
-  "projectFilePath": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FM.Cqrs\\FM.Cqrs.csproj",
+  "projectFilePath": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\FM.Cqrs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\onlj\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\onlj\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",

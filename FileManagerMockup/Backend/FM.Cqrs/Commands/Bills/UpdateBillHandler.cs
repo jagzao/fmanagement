@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Npgsql;
 
-namespace FM.Cqrs.Commands
+namespace FM.Cqrs.Commands.Bills
 {
     public class UpdateBillHandler : IRequestHandler<UpdateBillCommand, ResponseDto>
     {
@@ -26,13 +26,12 @@ namespace FM.Cqrs.Commands
             {
                 using (var connection = new NpgsqlConnection(_connectionString))
                 {
-                    var sql = "UPDATE Bills SET Name = @Name, Amount = @Amount, DueDate = @DueDate WHERE Id = @BillId";
+                    var sql = "UPDATE Bills SET Name = @Name, Company = @Company WHERE Id = @Id";
                     var parameters = new
                     {
                         request.Name,
-                        request.Amount,
-                        request.DueDate,
-                        request.BillId
+                        request.Company,
+                        request.Id
                     };
 
                     var affectedRows = await connection.ExecuteAsync(sql, parameters);
@@ -40,20 +39,20 @@ namespace FM.Cqrs.Commands
                     if (affectedRows > 0)
                     {
                         response.IsSuccess = true;
-                        response.Message = "Bill updated successfully.";
+                        response.Message = "Factura actualizada.";
                     }
                     else
                     {
                         response.IsSuccess = false;
-                        response.Message = "No bill found with the given ID.";
+                        response.Message = "No se encontro la factura.";
                     }
                 }
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error updating bill with ID {BillId}", request.BillId);
+                _logger.LogError(ex, "Error actualizando con ID {Id}", request.Id);
                 response.IsSuccess = false;
-                response.Message = "An error occurred while updating the bill.";
+                response.Message = "Error actualizando.";
                 response.exception = ex;
             }
 

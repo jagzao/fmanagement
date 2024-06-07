@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1T9X7h4x+Tvfoe4shwkTHAso56gd7pThr3yvdggEnjE09YB6majRrt+4rfUUbp/9QW4tcc6Ir0nMj2Rp6iPetg==",
+  "dgSpecHash": "MZP/Pq2GAPaTVVlSoLT3CBJsyqmajQMuxaIztJJ0HAo5VmyzAwiQpSTS8jXUX2tUEeoXruTJXKOErtl17OQ/eQ==",
   "success": true,
-  "projectFilePath": "C:\\jgzao\\ProjecTest\\Mockupx\\FileManagerMockup\\FileManagerMockup\\FileManagerMockup.csproj",
+  "projectFilePath": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FileManagerMockup\\FileManagerMockup.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\onlj\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\onlj\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",

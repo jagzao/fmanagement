@@ -28,14 +28,9 @@ namespace FileManagerMockup.Controllers
             return BadRequest(result);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateBill(int id, [FromBody] UpdateBillCommand command)
+        [HttpPut]
+        public async Task<IActionResult> UpdateBill([FromBody] UpdateBillCommand command)
         {
-            if(id != command.BillId)
-            {
-                return BadRequest("Bill Id mistach");
-            }
-
             var result = await _mediator.Send(command);
             if (result.IsSuccess)
             {
@@ -47,7 +42,7 @@ namespace FileManagerMockup.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBill(int id)
         {
-            var command = new DeleteBillCommand { BillId = id };
+            var command = new DeleteBillCommand { Id = id };
             var result = await _mediator.Send(command);
             if (result.IsSuccess)
             {

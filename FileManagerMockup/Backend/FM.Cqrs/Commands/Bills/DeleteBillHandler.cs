@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Npgsql;
 
-namespace FM.Cqrs.Commands
+namespace FM.Cqrs.Commands.Bills
 {
     public class DeleteBillHandler : IRequestHandler<DeleteBillCommand, ResponseDto>
     {
@@ -25,13 +25,13 @@ namespace FM.Cqrs.Commands
             {
                 using (var connection = new NpgsqlConnection(_connectionString))
                 {
-                    var sql = "DELETE FROM Bills WHERE Id = @BillId";
-                    var parameters = new { request.BillId };
+                    var sql = "DELETE FROM Bills WHERE Id = @Id";
+                    var parameters = new { request.Id };
 
                     await connection.ExecuteAsync(sql, parameters);
                 }
 
-                _logger.LogInformation("Bill with ID {BillId} deleted successfully", request.BillId);
+                _logger.LogInformation("Factura eliminada", request.Id);
                 return new ResponseDto
                 {
                     IsSuccess = true
@@ -39,7 +39,7 @@ namespace FM.Cqrs.Commands
             }
             catch (Exception ex)
             {
-                _logger.LogError(ex, "Error deleting bill with ID {BillId}", request.BillId);
+                _logger.LogError(ex, "Error eliminando la factura", request.Id);
                 return new ResponseDto
                 {
                     IsSuccess = false,
