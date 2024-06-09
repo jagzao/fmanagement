@@ -7,20 +7,12 @@
       "RelativeMoniker": "D:0:0:{2661CF81-4120-4505-9FBA-63AEE035F090}|FileManagerMockup\\FileManagerMockup.csproj|solutionrelative:filemanagermockup\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|c:\\jgzao\\projectest\\fmanagement\\filemanagermockup\\backend\\fm.cqrs\\commands\\files\\generatereporthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|solutionrelative:fm.cqrs\\commands\\files\\generatereporthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|c:\\jgzao\\projectest\\fmanagement\\filemanagermockup\\backend\\fm.cqrs\\commands\\files\\registerfileuploadhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|solutionrelative:fm.cqrs\\commands\\files\\registerfileuploadhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5037994F-EE53-40CA-8325-C8854B15C563}|FM.Core\\FM.Core.csproj|c:\\jgzao\\projectest\\fmanagement\\filemanagermockup\\backend\\fm.core\\models\\filedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5037994F-EE53-40CA-8325-C8854B15C563}|FM.Core\\FM.Core.csproj|solutionrelative:fm.core\\models\\filedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|c:\\jgzao\\projectest\\fmanagement\\filemanagermockup\\backend\\fm.cqrs\\commands\\files\\updatefilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|solutionrelative:fm.cqrs\\commands\\files\\updatefilehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|c:\\jgzao\\projectest\\fmanagement\\filemanagermockup\\backend\\fm.cqrs\\commands\\files\\getfilebyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{881C944B-E0A3-4E83-86C6-E692D17FAC10}|FM.Cqrs\\FM.Cqrs.csproj|solutionrelative:fm.cqrs\\commands\\files\\getfilebyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,58 +22,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "GenerateReportHandler.cs",
-              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\GenerateReportHandler.cs",
-              "RelativeDocumentMoniker": "FM.Cqrs\\Commands\\Files\\GenerateReportHandler.cs",
-              "ToolTip": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\GenerateReportHandler.cs",
-              "RelativeToolTip": "FM.Cqrs\\Commands\\Files\\GenerateReportHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAIAAAA",
+              "Title": "FileDto.cs",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Core\\Models\\FileDto.cs",
+              "RelativeDocumentMoniker": "FM.Core\\Models\\FileDto.cs",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Core\\Models\\FileDto.cs",
+              "RelativeToolTip": "FM.Core\\Models\\FileDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-07T14:00:30.637Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetFileByIdHandler.cs",
-              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\GetFileByIdHandler.cs",
-              "RelativeDocumentMoniker": "FM.Cqrs\\Commands\\Files\\GetFileByIdHandler.cs",
-              "ToolTip": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\GetFileByIdHandler.cs",
-              "RelativeToolTip": "FM.Cqrs\\Commands\\Files\\GetFileByIdHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T23:54:32.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateFileHandler.cs",
-              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\UpdateFileHandler.cs",
-              "RelativeDocumentMoniker": "FM.Cqrs\\Commands\\Files\\UpdateFileHandler.cs",
-              "ToolTip": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\UpdateFileHandler.cs",
-              "RelativeToolTip": "FM.Cqrs\\Commands\\Files\\UpdateFileHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T23:49:57.919Z",
+              "WhenOpened": "2024-06-09T00:54:22.755Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "RegisterFileUploadHandler.cs",
-              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\RegisterFileUploadHandler.cs",
-              "RelativeDocumentMoniker": "FM.Cqrs\\Commands\\Files\\RegisterFileUploadHandler.cs",
-              "ToolTip": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\RegisterFileUploadHandler.cs",
-              "RelativeToolTip": "FM.Cqrs\\Commands\\Files\\RegisterFileUploadHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAwAAAA",
+              "Title": "UpdateFileHandler.cs",
+              "DocumentMoniker": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\UpdateFileHandler.cs",
+              "RelativeDocumentMoniker": "FM.Cqrs\\Commands\\Files\\UpdateFileHandler.cs",
+              "ToolTip": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\Commands\\Files\\UpdateFileHandler.cs",
+              "RelativeToolTip": "FM.Cqrs\\Commands\\Files\\UpdateFileHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T23:43:25.658Z",
+              "WhenOpened": "2024-06-08T23:18:50.619Z",
               "EditorCaption": ""
             },
             {
@@ -92,9 +58,9 @@
               "RelativeDocumentMoniker": "FileManagerMockup\\Controllers\\FilesController.cs",
               "ToolTip": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FileManagerMockup\\Controllers\\FilesController.cs",
               "RelativeToolTip": "FileManagerMockup\\Controllers\\FilesController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAABwAAAAIAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAABwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-06T22:52:21.238Z",
+              "WhenOpened": "2024-06-08T21:14:10.27Z",
               "EditorCaption": ""
             }
           ]
