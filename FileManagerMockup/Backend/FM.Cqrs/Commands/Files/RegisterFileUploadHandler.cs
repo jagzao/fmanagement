@@ -5,40 +5,37 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Npgsql;
 
-namespace FM.Cqrs.Commands.Files
+public class RegisterFileUploadHandler : IRequestHandler<RegisterFileUploadQuery, bool>
 {
-    public class CreateFileHandler : IRequestHandler<RegisterFileUploadQuery, bool>
+    private readonly ILogger<RegisterFileUploadHandler> _logger;
+    private readonly string _connectionString;
+
+    public RegisterFileUploadHandler(ILogger<RegisterFileUploadHandler> logger, IConfiguration configuration)
     {
-        private readonly ILogger<CreateFileHandler> _logger;
-        private readonly string _connectionString;
+        _logger = logger;
+        _connectionString = configuration.GetConnectionString("DefaultConnection");
+    }
 
-        public CreateFileHandler(ILogger<CreateFileHandler> logger, IConfiguration configuration)
+    public async Task<bool> Handle(RegisterFileUploadQuery request, CancellationToken cancellationToken)
+    {
+        try
         {
-            _logger = logger;
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            using (var connection = new NpgsqlConnection(_connectionString))
+            {
+                var sql = "CALL public.insert_file(@FilePath, @FileSize, @Name, @ParentId, @IsDirectory)";
+                var parameters = new { request.FilePath, request.FileSize, request.Name, request.ParentId, request.IsDirectory };
+
+                await connection.ExecuteAsync(sql, parameters);
+            }
+
+            _logger.LogInformation("Subida de archivo registrada exitosamente: {FilePath}, {FileSize}, {Name}", request.FilePath, request.FileSize, request.Name);
+
+            return true;
         }
-
-        public async Task<bool> Handle(RegisterFileUploadQuery request, CancellationToken cancellationToken)
+        catch (Exception ex)
         {
-            try
-            {
-                using (var connection = new NpgsqlConnection(_connectionString))
-                {
-                    var sql = "INSERT INTO Files (FilePath, FileSize, Name, ParentId, IsDirectory) VALUES (@FilePath, @FileSize, @Name, @ParentId, @IsDirectory)";
-                    var parameters = new { request.FilePath, request.FileSize, request.Name, request.ParentId, request.IsDirectory };
-
-                    await connection.ExecuteAsync(sql, parameters);
-                }
-
-                _logger.LogInformation("Archivo registrado exitosamente: {FilePath}, {FileSize}, {Name}, {ParentId}, {IsDirectory}", request.FilePath, request.FileSize, request.Name, request.ParentId, request.IsDirectory);
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al registrar el archivo: {FilePath}, {FileSize}, {Name}, {ParentId}, {IsDirectory}", request.FilePath, request.FileSize, request.Name, request.ParentId, request.IsDirectory);
-                return false;
-            }
+            _logger.LogError(ex, "Error al registrar la subida del archivo: {FilePath}, {FileSize}, {Name}", request.FilePath, request.FileSize, request.Name);
+            return false;
         }
     }
 }

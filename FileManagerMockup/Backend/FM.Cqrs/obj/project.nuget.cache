@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ITgK+RFmFQMkp+Jjz4znuE+n9CrWkes5trkazk5culL8vTkl3zRYVRxdMn7B1NeH46wZZG0GSb9751eMn9P54Q==",
+  "dgSpecHash": "H1XF1jfbctPX7kntztmo/7V4qGnShQnmKEyQIMvf7DAjhpAG/OZFzksYl1G8zfMFumDGPMI/pW5YeAi9XgbJew==",
   "success": true,
   "projectFilePath": "C:\\jgzao\\ProjecTest\\Fmanagement\\FileManagerMockup\\Backend\\FM.Cqrs\\FM.Cqrs.csproj",
   "expectedPackageFiles": [
@@ -18,6 +18,8 @@
     "C:\\Users\\onlj\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\onlj\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\onlj\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
+    "C:\\Users\\onlj\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
+    "C:\\Users\\onlj\\.nuget\\packages\\serilog.sinks.file\\5.0.0\\serilog.sinks.file.5.0.0.nupkg.sha512",
     "C:\\Users\\onlj\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
     "C:\\Users\\onlj\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
   ],

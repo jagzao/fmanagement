@@ -8,6 +8,6 @@ namespace FM.Repository.Interface
 {
     public interface IRecordRepository
     {
-        Task<int> CreateRecord(string name);
+        //Task<int> CreateRecord(string name);
     }
 }

@@ -6,44 +6,34 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Npgsql;
 
-namespace FM.Cqrs.Commands.Files
+public class GetFileByIdHandler : IRequestHandler<GetFileByIdQuery, FileDto>
 {
-    public class GetFileByIdHandler : IRequestHandler<GetFileByIdQuery, FileDto>
+    private readonly ILogger<GetFileByIdHandler> _logger;
+    private readonly string _connectionString;
+
+    public GetFileByIdHandler(ILogger<GetFileByIdHandler> logger, IConfiguration configuration)
     {
-        private readonly ILogger<GetFileByIdHandler> _logger;
-        private readonly string _connectionString;
+        _logger = logger;
+        _connectionString = configuration.GetConnectionString("DefaultConnection");
+    }
 
-        public GetFileByIdHandler(ILogger<GetFileByIdHandler> logger, IConfiguration configuration)
+    public async Task<FileDto> Handle(GetFileByIdQuery request, CancellationToken cancellationToken)
+    {
+        try
         {
-            _logger = logger;
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            using (var connection = new NpgsqlConnection(_connectionString))
+            {
+                var sql = "SELECT * FROM get_file_by_id(@Id)";
+                var parameters = new { Id = request.Id };
+
+                var result = await connection.QueryFirstOrDefaultAsync<FileDto>(sql, parameters);
+                return result;
+            }
         }
-
-        public async Task<FileDto> Handle(GetFileByIdQuery request, CancellationToken cancellationToken)
+        catch (Exception ex)
         {
-            try
-            {
-                using (var connection = new NpgsqlConnection(_connectionString))
-                {
-                    var sql = "SELECT Id, FilePath, FileSize, Name, ParentId, IsDirectory FROM Files WHERE Id = @Id";
-                    var parameters = new { request.Id };
-
-                    var file = await connection.QueryFirstOrDefaultAsync<FileDto>(sql, parameters);
-
-                    if (file == null)
-                    {
-                        _logger.LogWarning("Archivo no encontrado: {Id}", request.Id);
-                        return null;
-                    }
-
-                    return file;
-                }
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al obtener el archivo: {Id}", request.Id);
-                return null;
-            }
+            _logger.LogError(ex, "Error retrieving file by id: {Id}", request.Id);
+            return null;
         }
     }
 }

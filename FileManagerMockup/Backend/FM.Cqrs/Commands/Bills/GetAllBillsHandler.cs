@@ -38,7 +38,7 @@ namespace FM.Cqrs.Commands.Bills
                 _logger.LogError(ex, "Error retrieving bills.");
                 response.IsSuccess = false;
                 response.Message = ex.ToString();
-                response.exception = ex;
+                response.Exception = ex;
             }
 
             return response;

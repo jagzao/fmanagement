@@ -8,7 +8,7 @@ using Npgsql;
 
 namespace FM.Cqrs.Commands.Bills
 {
-    public class UpdateBillHandler : IRequestHandler<UpdateBillCommand, ResponseDto>
+    public class UpdateBillHandler : IRequestHandler<UpdateBillQuery, ResponseDto>
     {
         private readonly ILogger<UpdateBillHandler> _logger;
         private readonly string _connectionString;
@@ -19,7 +19,7 @@ namespace FM.Cqrs.Commands.Bills
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-        public async Task<ResponseDto> Handle(UpdateBillCommand request, CancellationToken cancellationToken)
+        public async Task<ResponseDto> Handle(UpdateBillQuery request, CancellationToken cancellationToken)
         {
             var response = new ResponseDto();
             try
@@ -53,7 +53,7 @@ namespace FM.Cqrs.Commands.Bills
                 _logger.LogError(ex, "Error actualizando con ID {Id}", request.Id);
                 response.IsSuccess = false;
                 response.Message = "Error actualizando.";
-                response.exception = ex;
+                response.Exception = ex;
             }
 
             return response;

@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34902.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileManagerMockup", "FileManagerMockup\FileManagerMockup.csproj", "{2661CF81-4120-4505-9FBA-63AEE035F090}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileManagerMockup", "FileManagerMockup\FileManagerMockup.csproj", "{2661CF81-4120-4505-9FBA-63AEE035F090}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FM.Repository", "FM.Repository\FM.Repository.csproj", "{A5F1BE73-7EA6-423B-8E9B-F857DDE4D276}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FM.Repository", "FM.Repository\FM.Repository.csproj", "{A5F1BE73-7EA6-423B-8E9B-F857DDE4D276}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FM.Cqrs", "FM.Cqrs\FM.Cqrs.csproj", "{881C944B-E0A3-4E83-86C6-E692D17FAC10}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FM.Cqrs", "FM.Cqrs\FM.Cqrs.csproj", "{881C944B-E0A3-4E83-86C6-E692D17FAC10}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FM.Core", "FM.Core\FM.Core.csproj", "{5037994F-EE53-40CA-8325-C8854B15C563}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FM.Entity", "FM.Entity\FM.Entity.csproj", "{C605906B-6EBC-4CE2-9080-634E6A8BCC63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FM.Core", "FM.Core\FM.Core.csproj", "{5037994F-EE53-40CA-8325-C8854B15C563}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +33,6 @@ Global
 		{5037994F-EE53-40CA-8325-C8854B15C563}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5037994F-EE53-40CA-8325-C8854B15C563}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5037994F-EE53-40CA-8325-C8854B15C563}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C605906B-6EBC-4CE2-9080-634E6A8BCC63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C605906B-6EBC-4CE2-9080-634E6A8BCC63}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C605906B-6EBC-4CE2-9080-634E6A8BCC63}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C605906B-6EBC-4CE2-9080-634E6A8BCC63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

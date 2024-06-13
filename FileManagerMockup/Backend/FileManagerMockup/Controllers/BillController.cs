@@ -18,7 +18,7 @@ namespace FileManagerMockup.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> CreateBill([FromBody] CreateBillCommand command)
+        public async Task<IActionResult> CreateBill([FromBody] CreateBillQuery command)
         {
             var result = await _mediator.Send(command);
             if (result.IsSuccess)
@@ -29,7 +29,7 @@ namespace FileManagerMockup.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateBill([FromBody] UpdateBillCommand command)
+        public async Task<IActionResult> UpdateBill([FromBody] UpdateBillQuery command)
         {
             var result = await _mediator.Send(command);
             if (result.IsSuccess)
@@ -42,7 +42,7 @@ namespace FileManagerMockup.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteBill(int id)
         {
-            var command = new DeleteBillCommand { Id = id };
+            var command = new DeleteBillQuery { Id = id };
             var result = await _mediator.Send(command);
             if (result.IsSuccess)
             {

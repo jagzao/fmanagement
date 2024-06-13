@@ -5,40 +5,37 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Npgsql;
 
-namespace FM.Cqrs.Commands.Files
+public class UpdateFileHandler : IRequestHandler<UpdateFileQuery, bool>
 {
-    public class UpdateFileHandler : IRequestHandler<UpdateFileQuery, bool>
+    private readonly ILogger<UpdateFileHandler> _logger;
+    private readonly string _connectionString;
+
+    public UpdateFileHandler(ILogger<UpdateFileHandler> logger, IConfiguration configuration)
     {
-        private readonly ILogger<UpdateFileHandler> _logger;
-        private readonly string _connectionString;
+        _logger = logger;
+        _connectionString = configuration.GetConnectionString("DefaultConnection");
+    }
 
-        public UpdateFileHandler(ILogger<UpdateFileHandler> logger, IConfiguration configuration)
+    public async Task<bool> Handle(UpdateFileQuery request, CancellationToken cancellationToken)
+    {
+        try
         {
-            _logger = logger;
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            using (var connection = new NpgsqlConnection(_connectionString))
+            {
+                var sql = "CALL public.update_file(@Id, @FilePath, @FileSize, @Name, @ParentId, @IsDirectory)";
+                var parameters = new { Id = request.Id, FilePath = request.FilePath, FileSize = request.FileSize, Name = request.Name, ParentId = request.ParentId, IsDirectory = request.IsDirectory };
+
+                await connection.ExecuteAsync(sql, parameters);
+            }
+
+            _logger.LogInformation("Archivo actualizado exitosamente: {Id}", request.Id);
+
+            return true;
         }
-
-        public async Task<bool> Handle(UpdateFileQuery request, CancellationToken cancellationToken)
+        catch (Exception ex)
         {
-            try
-            {
-                using (var connection = new NpgsqlConnection(_connectionString))
-                {
-                    var sql = "UPDATE Files SET FilePath = @FilePath, FileSize = @FileSize, Name = @Name, ParentId = @ParentId, IsDirectory = @IsDirectory WHERE Id = @Id";
-                    var parameters = new { request.FilePath, request.FileSize, request.Name, request.ParentId, request.IsDirectory, request.Id };
-
-                    await connection.ExecuteAsync(sql, parameters);
-                }
-
-                _logger.LogInformation("Archivo actualizado exitosamente: {Id}, {FilePath}, {FileSize}, {Name}, {ParentId}, {IsDirectory}", request.Id, request.FilePath, request.FileSize, request.Name, request.ParentId, request.IsDirectory);
-
-                return true;
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Error al actualizar el archivo: {Id}, {FilePath}, {FileSize}, {Name}, {ParentId}, {IsDirectory}", request.Id, request.FilePath, request.FileSize, request.Name, request.ParentId, request.IsDirectory);
-                return false;
-            }
+            _logger.LogError(ex, "Error al actualizar el archivo: {Id}", request.Id);
+            return false;
         }
     }
 }

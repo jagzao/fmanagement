@@ -46,7 +46,7 @@ namespace FM.Cqrs.Commands.Bills
                 _logger.LogError(ex, "Error obteniendo factura {BillId}", request.BillId);
                 response.IsSuccess = false;
                 response.Message = "Error obteniendo factura.";
-                response.exception = ex;
+                response.Exception = ex;
             }
 
             return response;

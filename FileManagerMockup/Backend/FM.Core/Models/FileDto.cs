@@ -4,6 +4,7 @@
     {
         public int Id { get; set; }
         public long FileSize { get; set; }
+        public string? FilePath { get; set; }
         public string Name { get; set; }
         public int ParentId { get; set; }
         public bool IsDirectory { get; set; }

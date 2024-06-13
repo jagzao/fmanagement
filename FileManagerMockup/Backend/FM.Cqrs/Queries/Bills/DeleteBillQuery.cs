@@ -3,7 +3,7 @@ using MediatR;
 
 namespace FM.Cqrs.Queries
 {
-    public class DeleteBillCommand : IRequest<ResponseDto>
+    public class DeleteBillQuery : IRequest<ResponseDto>
     {
         public int Id { get; set; }
     }

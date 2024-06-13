@@ -6,14 +6,27 @@ using Microsoft.AspNetCore.Http.Features;
 using FM.Cqrs.Queries;
 using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Authentication;
+using FM.Cqrs.Queries.Files;
 
 var builder = WebApplication.CreateBuilder(args);
 
 Log.Logger = new LoggerConfiguration()
-    .ReadFrom.Configuration(builder.Configuration)
-    .Enrich.FromLogContext()
+    .MinimumLevel.Debug()
     .WriteTo.Console()
+    .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
     .CreateLogger();
+
+try
+{
+    Log.Information("Iniciando el host");
+}catch(Exception ex)
+{
+    Log.Fatal(ex, "Host termino inesperadamente");
+}
+finally
+{
+    Log.CloseAndFlush();
+}
 
 builder.Host.UseSerilog(Log.Logger);
 
@@ -58,11 +71,18 @@ builder.Services.AddSingleton<DapperContext>();
 
 builder.Services.AddMediatR(cfg =>
 {
-    cfg.RegisterServicesFromAssembly(typeof(CreateBillCommand).Assembly);
-    cfg.RegisterServicesFromAssembly(typeof(DeleteBillCommand).Assembly);
-    cfg.RegisterServicesFromAssembly(typeof(UpdateBillCommand).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(CreateBillQuery).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(DeleteBillQuery).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(UpdateBillQuery).Assembly);
     cfg.RegisterServicesFromAssembly(typeof(GetBillByIdQuery).Assembly);
     cfg.RegisterServicesFromAssembly(typeof(GetAllBillsQuery).Assembly);
+
+    cfg.RegisterServicesFromAssembly(typeof(DeleteFileQuery).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(GenerateReportQuery).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(GetAllFilesQuery).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(GetFileByIdQuery).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(RegisterFileUploadQuery).Assembly);
+    cfg.RegisterServicesFromAssembly(typeof(UpdateFileQuery).Assembly);
 });
 
 builder.Services.Configure<FormOptions>(options =>

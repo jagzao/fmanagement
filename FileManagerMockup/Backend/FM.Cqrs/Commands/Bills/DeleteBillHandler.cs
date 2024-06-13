@@ -8,7 +8,7 @@ using Npgsql;
 
 namespace FM.Cqrs.Commands.Bills
 {
-    public class DeleteBillHandler : IRequestHandler<DeleteBillCommand, ResponseDto>
+    public class DeleteBillHandler : IRequestHandler<DeleteBillQuery, ResponseDto>
     {
         private readonly ILogger<DeleteBillHandler> _logger;
         private readonly string _connectionString;
@@ -19,7 +19,7 @@ namespace FM.Cqrs.Commands.Bills
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-        public async Task<ResponseDto> Handle(DeleteBillCommand request, CancellationToken cancellationToken)
+        public async Task<ResponseDto> Handle(DeleteBillQuery request, CancellationToken cancellationToken)
         {
             try
             {
@@ -43,7 +43,7 @@ namespace FM.Cqrs.Commands.Bills
                 return new ResponseDto
                 {
                     IsSuccess = false,
-                    exception = ex
+                    Exception = ex
                 };
             }
         }

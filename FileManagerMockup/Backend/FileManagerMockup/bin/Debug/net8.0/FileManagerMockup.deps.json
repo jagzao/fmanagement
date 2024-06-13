@@ -22,6 +22,7 @@
           "Serilog.AspNetCore": "8.0.1",
           "Serilog.Settings.Configuration": "8.0.0",
           "Serilog.Sinks.Console": "5.0.1",
+          "Serilog.Sinks.File": "5.0.0",
           "Swashbuckle": "5.6.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -522,7 +523,8 @@
           "Dapper": "2.1.35",
           "FM.Core": "1.0.0",
           "FM.Repository": "1.0.0",
-          "MediatR": "12.2.0"
+          "MediatR": "12.2.0",
+          "Serilog.Sinks.File": "5.0.0"
         },
         "runtime": {
           "FM.Cqrs.dll": {}

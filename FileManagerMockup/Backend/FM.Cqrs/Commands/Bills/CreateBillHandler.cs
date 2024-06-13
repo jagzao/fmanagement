@@ -8,7 +8,7 @@ using Npgsql;
 
 namespace FM.Cqrs.Commands.Bills
 {
-    public class CreateBillHandler : IRequestHandler<CreateBillCommand, ResponseDto>
+    public class CreateBillHandler : IRequestHandler<CreateBillQuery, ResponseDto>
     {
         private readonly ILogger<CreateBillHandler> _logger;
         private readonly string _connectionString;
@@ -19,10 +19,27 @@ namespace FM.Cqrs.Commands.Bills
             _connectionString = configuration.GetConnectionString("DefaultConnection");
         }
 
-        public async Task<ResponseDto> Handle(CreateBillCommand request, CancellationToken cancellationToken)
+        public async Task<ResponseDto> Handle(CreateBillQuery request, CancellationToken cancellationToken)
         {
             try
             {
+                if (request.Name.Length > 255)
+                {
+                    return new ResponseDto
+                    {
+                        IsSuccess = false,
+                        Message = "La longitud es maximo de 255 caracteres"
+                    };
+                }
+                if (request.Company.Length > 255)
+                {
+                    return new ResponseDto
+                    {
+                        IsSuccess = false,
+                        Message = "La longitud es maximo de 255 caracteres"
+                    };
+                }
+
                 using (var connection = new NpgsqlConnection(_connectionString))
                 {
                     var sql = "INSERT INTO Bills (Name, Company) VALUES (@Name, @Company)";
@@ -43,7 +60,7 @@ namespace FM.Cqrs.Commands.Bills
                 return new ResponseDto
                 {
                     IsSuccess = false,
-                    exception = ex
+                    Exception = ex
                 };
             }
         }

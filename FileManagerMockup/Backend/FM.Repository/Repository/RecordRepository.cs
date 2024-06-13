@@ -9,9 +9,9 @@ namespace FM.Repository.Repository
         {
             _dapperContext = dapperContext;
         }
-        public Task<int> CreateRecord(string name)
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<int> CreateRecord(string name)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

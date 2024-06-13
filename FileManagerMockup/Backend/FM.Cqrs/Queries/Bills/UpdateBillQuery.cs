@@ -8,7 +8,7 @@ using MediatR;
 
 namespace FM.Cqrs.Queries
 {
-    public class UpdateBillCommand : IRequest<ResponseDto>
+    public class UpdateBillQuery : IRequest<ResponseDto>
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FM.Repository")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72d72d3f6d03a054bc37a5c41ff82e21b6d3a221")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b505f3affb14762c9108ac7984a91f9e4ffe06a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("FM.Repository")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FM.Repository")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
